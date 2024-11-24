@@ -13,51 +13,82 @@
 </head>
 
 <body>
-
     <header class="header">
         <a href="#" class="Logo">Nerdy Galaxy</a>
-
-        <nav class="navbar2">
-            <a href="index.html">Tienda</a>
-            <a href="#">Mangas</a>
-            <a href="#">Figuras</a>
-            <a href="Proyectos.html">Proyectos</a>
-            <a href="#">Servicios</a>
-
+        <nav>
+            <div class="nav-toggle" onclick="toggleNav()">☰</div>
+            <div class="navbar2">
+                <a href="index.html">Tienda</a>
+                <a href="#">Mangas</a>
+                <a href="#">Figuras</a>
+                <a href="Proyectos.html">Proyectos</a>
+                <a href="#">Servicios</a>
+            </div>
         </nav>
     </header>
+
     <section class="Banner">
         <div class="cont_Banner">
             <h2>PROYECTOS</h2>
-            <p>Herramientas Digitales</p>
+            <p>Explora nuestras herramientas digitales</p>
         </div>
     </section>
 
 
     <div class="block">
-        <h1>Videojuego con Scratch</h1>
+        <h1 style="background-color: #f3c703; color: white; border-radius: 5px;">Videojuego con Scratch</h1>
         <div class="content">
             <div class="iframe-container">
-                <iframe 
-                    src="https://scratch.mit.edu/projects/1097837846/embed" 
-                    allowtransparency="true" 
-                    frameborder="0" 
-                    scrolling="no" 
-                    allowfullscreen>
-                </iframe>
+                <iframe src="https://scratch.mit.edu/projects/1097837846/embed" allowtransparency="true" frameborder="0"
+                    scrolling="no" allowfullscreen></iframe>
             </div>
             <div class="description">
                 <p>
-                    Este proyecto combina elementos de Zelda y Pac-Man, desarrollado en Scratch. Explora la creatividad y la programación de manera divertida.
+                    Este proyecto combina elementos de Zelda y Pac-Man, desarrollado en Scratch. Explora la creatividad
+                    y la programación de manera divertida, con una dificultad que aumenta mientras avanzas.
                 </p>
                 <p><strong>Controles:</strong></p>
-                <ul class="li">
-                    <li>Flecha Arriba</li>
-                    <li>Flecha Derecha</li>
-                    <li>Flecha Izquierda</li>
-                    <li>Flecha Abajo</li>
-                </ul>
+                <p>Utiliza las flechas o [W] [A] [D] [S] para controlar al personaje</p>
+                <p>Recolecta todas las rupias para pasar de nivel</p>
+                <p>No dejes que te toquen los enemigos; solo tienes 3 vidas</p>
+                <p>Recolecta las Trifuerzas esparcidas por el laberinto para derrotar a tus enemigos</p>
             </div>
+        </div>
+        <BR>
+        <h1 style="background-color: #f3c703; color: white; border-radius: 5px;">APLICACION APP INVENTOR</h1>
+        <div class="qr-and-video-section">
+            <div class="qr-code">
+                <h2>Descarga la App</h2>
+                <img src="IMG/qr-code.png" alt="Código QR" class="qr-img">
+                <p>Escanea este código para descargar el APK</p>
+            </div>
+            <div class="video-container">
+                <h2>Explora el Tutorial</h2>
+                <video controls width="100%" class="responsive-video">
+                    <source src="IMG/Vdeio.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+
+        <div class="iframe-section">
+            <h2 style="text-align: center; background-color: #f3c703; border-radius: 5px; color: white;">Más sobre el
+                proyecto</h2>
+            <div class="iframe-container">
+                <iframe src="https://share.vidnoz.com/aivideo?id=aishare-4QyRhWe7U9Bj9AktqhAxGZOu173247831211826395"
+                    name="Avatar" scrolling="no" width="100%" height="500px" style="border: solid #000000;"></iframe>
+            </div>
+            <p style="text-align: center;">Descubre más sobre el desarrollo de este proyecto con este video interactivo.
+            </p>
+        </div>
+        <br>
+        <h2 style="text-align: center; background-color: #f3c703; border-radius: 5px; color: white;">QUIZ DE ANIME
+            KAHHOT</h2>
+        <div class="kahoot-iframe-section">
+            <iframe src="https://kahoot.it/challenge/?quiz-id=ba499615-cdb3-4cee-a42c-7134a76f70f1&single-player=true"
+                style="border:0px #ffffff none;" name="KAHOOT" scrolling="no" frameborder="1" marginheight="0px"
+                marginwidth="0px" height="400px" width="600px" allowfullscreen>
+            </iframe>
         </div>
     </div>
 
@@ -65,34 +96,43 @@
 
 
     <footer class="footer">
-        <div>
-            <a href="#">Terminos y condiciones</a>
+        <div class="footer-section">
+            <button class="footer-toggle">Términos y condiciones</button>
             <ul>
-                <li>Politica de garantia</li>
-                <li>Terminos de Envíos</li>
+                <li>Política de garantía</li>
+                <li>Términos de envío</li>
                 <li>Cuidado del producto</li>
-                <li>Politica de Privacidad</li>
+                <li>Política de privacidad</li>
             </ul>
         </div>
-        <div>
-            <a href="#">Informacion De la Empresa</a>
+        <div class="footer-section">
+            <button class="footer-toggle">Información de la empresa</button>
             <ul>
                 <li>Nuestras tiendas</li>
                 <li>Trabaja con nosotros</li>
-                <li>Mision</li>
-                <li>Vision</li>
+                <li>Misión</li>
+                <li>Visión</li>
             </ul>
         </div>
-        <div>
-            <a href="#">Servicio al Cliente</a>
+        <div class="footer-section">
+            <button class="footer-toggle">Servicio al cliente</button>
             <ul>
-                <li>Contatanos</li>
+                <li>Contáctanos</li>
                 <li>Mapa del sitio</li>
                 <li>Puntos</li>
             </ul>
         </div>
-
     </footer>
+    <script>
+        document.querySelectorAll('.footer-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const section = button.parentElement;
+                section.classList.toggle('active');
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

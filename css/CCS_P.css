@@ -116,6 +116,81 @@ h1 {
     }
 }
 
+.menu-toggle {
+    display: none; /* Oculto en dispositivos grandes */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+
+.menu-icon {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon::before {
+    top: -10px;
+}
+
+.menu-icon::after {
+    top: 10px;
+}
+
+/* Ocultar menú inicialmente en pantallas pequeñas */
+.navbar2 {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar2 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 99;
+    }
+
+    .navbar2 a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar2.show {
+        display: flex;
+    }
+}
+
 .footer {
     background-color: black;
     color: white;

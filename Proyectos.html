@@ -15,16 +15,17 @@
 <body>
     <header class="header">
         <a href="#" class="Logo">Nerdy Galaxy</a>
-        <nav>
-            <div class="nav-toggle" onclick="toggleNav()">☰</div>
-            <div class="navbar2">
-                <a href="index.html">Tienda</a>
-                <a href="#">Mangas</a>
-                <a href="#">Figuras</a>
-                <a href="Proyectos.html">Proyectos</a>
-                <a href="#">Servicios</a>
-            </div>
+        <nav class="navbar2">
+            <a href="index.html">Tienda</a>
+            <a href="#">Mangas</a>
+            <a href="#">Figuras</a>
+            <a href="Proyectos.html">Proyectos</a>
+            <a href="#">Servicios</a>
         </nav>
+        <!-- Ícono de hamburguesa para dispositivos móviles -->
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="menu-icon"></span>
+        </button>
     </header>
 
     <section class="Banner">
@@ -130,6 +131,15 @@
                 section.classList.toggle('active');
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navbar = document.querySelector(".navbar2");
+
+        menuToggle.addEventListener("click", function () {
+            navbar.classList.toggle("show");
+        });
+    });
     </script>
 
 
